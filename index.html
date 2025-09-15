@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tix Tarea de Prueba</title>
+</head>
+<body>
+    <main>
+        <se ction id="login-container">
+            <div class="card" id="login-card">
+
+                    <img src="./assets/TIXLogo.svg" alt="Tix Logo" id="avatar"/>
+       
+                <form>
+                    <h1>Iniciar Sesión</h1>
+                    <fieldset>
+                        <label for="email">
+                            Email
+                        </label>
+                        <div class="input-container">
+                            <i data-lucide="mail" class="icon-class"></i>
+                            <input type="text" name="email" placeholder="Escribe tu correo electrónico"/>
+                        </div>
+
+                    </fieldset>
+                    <fieldset>
+                        <label for="password">
+                            Contraseña
+                        </label>
+                        <div class="input-container">
+                            <i data-lucide="lock-keyhole" class="icon-class"></i>
+                            <input type="text" name="password" placeholder="Escribe tu contraseña"/>
+                            <i data-lucide="eye-off" class="icon-class" style="cursor: pointer;"></i>
+                        </div>
+                    </fieldset>
+                    <a href="#" id="forgot-password-link">
+                       ¿Olvidaste tu contraseña? 
+                    </a>
+                    <button id="login-button">
+                        Iniciar sesión
+                    </button>
+                </form>
+                <span id="or-text">
+                    O inicia sesión con
+                </span>
+                <div class="social-buttons-container">
+                    <button class="social_button">
+                           <img src="./assets/google.svg" alt="Google Icon">
+                    </button>
+                    <button class="social_button">
+                            <img src="./assets/facebook.svg" alt="Google Icon"> 
+                    </button>
+                    <button class="social_button">
+                        <img src="./assets/apple.svg" alt="Google Icon">
+                    </button>
+                </div>
+            </div>
+ 
+            <div class="card" id="no-account-cta">
+                <h2>
+                    ¿No tienes cuenta?
+                </h2>
+                <button id="cta_button">
+                    Regístrate como organizador
+                </button>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
